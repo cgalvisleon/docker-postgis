@@ -8,8 +8,8 @@ LABEL maintainer="PostGIS Project - https://postgis.net" \
       org.opencontainers.image.description="PostGIS 3.5.1 spatial database extension with PostgreSQL 14 Alpine" \
       org.opencontainers.image.source="https://github.com/postgis/docker-postgis"
 
-ENV POSTGIS_VERSION 3.5.1
-ENV POSTGIS_SHA256 b46a63a0563a46a670686a56464c1afb5db0b97ee62e87766edd1d2748492b09
+ENV POSTGIS_VERSION=3.5.1
+ENV POSTGIS_SHA256=b46a63a0563a46a670686a56464c1afb5db0b97ee62e87766edd1d2748492b09
 
 RUN set -eux \
     && apk add --no-cache --virtual .fetch-deps \
